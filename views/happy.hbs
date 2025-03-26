@@ -3,17 +3,17 @@
 
 <head>
   <meta charset="utf-8">
-  <meta name="viewport" content="width=device-width", initial-scale=1>
-  <meta name="author" content="">
-  <meta name="description" content=" ">
-  <meta name="keywords" content="">
-  <title>Canseco - CS 3 </title>
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="author" content="Miggy Alvarado">
+  <meta name="description" content="This web page outputs the happy birthday song sung by n people ">
+  <meta name="keywords" content="birthday, happy, lyrics, people">
+  <title>Happy Birthday </title>
   <!-- using the w3.css framework to show how predefined css classes can be used inside an html document.  -->
   <link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
   <!-- local css property definitions to further enhance the page -->
   <link href="style.css" rel="stylesheet" type="text/css" />
 
-  <link rel="icon" type="image/x-icon" href="">
+  <link rel="icon" type="image/x-icon" href="https://cdn.glitch.global/922976a3-8d34-4e64-b92f-98bce4c7efb6/favicon%20(3).ico?v=1729660451094">
 </head>
 
 <!--- classes that starts with w3 are defined inside w3.css -->
@@ -29,20 +29,34 @@
 
 
   <header class="w3-container" id="header" > 
-    <h1>Roy Canseco - III-K - Jan 2025</h1>
+    <h1>Miggy Alvarado - 9-Mg - Mar 2025</h1>
     <h2> Birthday </h2>
   </header>
 
   <section class="w3-container" id="input"> 
-    <h2>Output</h2>
-    <!-- Place your output here -->
+    <h2>Output</h2> <!--outputs the input information given by the user-->
+    <div class="w3-card w3-padding w3-margin">
+      {{#each formData}}
+        <p>{{@key}}: {{this}}</p>
+      {{/each}}
+    </div>
+    
+    <h2>Happy Birthday </h2> <!--to sing happy birthday with the number of guests-->
+    <div class="w3-card w3-padding w3-margin">
+      <p>Nickname: {{name}}</p>
+      <p>Gender: {{gender}}</p>
+      <p>Number of guests: {{number}}</p>
+      
+      {{#each song}}
+        <p>{{singer}}: {{word}}</p>
+      {{/each}}
+    </div>
   </section>
 
   <footer class="w3-container ">
-    <p> &copy; 2024 CS3 Teachers </p>
+    <p> &copy; 2025 Miggy Alvarado </p>
   </footer>
 
-  
-</body>
 
-</html>
+<script src="server.js"></script>
+</body>
