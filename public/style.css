@@ -9,9 +9,9 @@ html {
 
 
 body {
-  font-family: arial, san-serif;
-  background-color: cornsilk;
-  color: royalblue
+  font-family: cursive;
+  background-color: teal;
+  color: goldenrod
 }
 
 h1,
@@ -31,17 +31,20 @@ td {
 
 
 #header {
-  border: 1px solid royalblue;
-  padding: 20px;
+  background-color: #003434;
+  border: 1px solid goldenrod;
+  height: 130px;
+  margin-top: 10px;
+  text-align: center;
 }
 
 #input {
-  border: 1px solid royalblue;
+  border: 1px solid goldenrod;
   padding: 20px;
 }
 
 #output {
-  border: 1px solid royalblue;
+  border: 1px solid black;
   padding: 20px;
   overflow: scroll;
   background-color: black;
@@ -53,4 +56,22 @@ img {
   object-fit: contain;
   width: 100%;
   height: 100%;
+}
+.inputBox { /*  fixed input boxes of guest names */
+  border-radius: 10px;
+  margin-bottom: 3px;
+  height: 40px;
+  
+
+}
+
+.inputBox:hover { /*When the input boxes are hovered*/
+  background-color: lightgray;
+}
+
+.inputBox:active { /*When the input boxes are clicked*/
+  background-color: green;
+}
+footer {
+  background-color: navy
 }
