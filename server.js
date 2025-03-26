@@ -12,7 +12,7 @@ const port = 3006;
 app.use(express.static(path.join(__dirname, "public")));
 app.set("view engine", "hbs");
 // set the views folder (in this case, views/pages)
-app.set('views', path.join(__dirname, 'src/pages'));
+app.set('views', path.join(__dirname, 'views'));
 
 // Parse urlencoded form data
 app.use(bodyParser.urlencoded({ extended: true }));
